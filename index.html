@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laser saber | Лазерный меч</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+
+
+  <div class="laser-saber">
+    <span class="laser-saber__laser"></span>
+    <img src="./saber.png" alt="" class="laser-saber__hilt">
+    <audio id="boom" loop>
+      <source src="./boom.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    let laserSaber = document.querySelector('.laser-saber');
+    let boom = document.querySelector('#boom');
+
+    laserSaber.addEventListener('click', function (e) {
+      this.classList.toggle('--active');
+      if (this.classList.contains('--active')) {
+        new Audio('./1.mp3').play();        
+        setTimeout(function(){boom.play();},900);
+      } else {
+        new Audio('./0.mp3').play();        
+        setTimeout(function(){boom.pause();},1000);
+        boom.currentTime = 0;
+      }
+    });
+  </script>
+
+</body>
+
+</html>
