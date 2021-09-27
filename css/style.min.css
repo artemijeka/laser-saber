@@ -84,12 +84,14 @@ body {
   -webkit-transform-origin: 50% 0%;
       -ms-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
-  -webkit-transition: 1100ms;
-  -o-transition: 1100ms;
-  transition: 1100ms;
   -webkit-transition-timing-function: ease-in;
        -o-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
+  -webkit-transition: 1100ms;
+  -o-transition: 1100ms;
+  transition: 1100ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
   -webkit-box-shadow: 0 0 5px #74FAF1, 0 0 15px #74FAF1, 0 0 30px #74FAF1, 0 0 60px #74FAF1;
           box-shadow: 0 0 5px #74FAF1, 0 0 15px #74FAF1, 0 0 30px #74FAF1, 0 0 60px #74FAF1;
   position: absolute;
@@ -102,15 +104,17 @@ body {
   -webkit-transition: 1100ms;
   -o-transition: 1100ms;
   transition: 1100ms;
-  -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
   -webkit-animation-name: boom;
           animation-name: boom;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   -webkit-animation-duration: 3100ms;
           animation-duration: 3100ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 
 @-webkit-keyframes boom {

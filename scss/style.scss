@@ -51,8 +51,9 @@ body {
     pointer-events: none;
     transform: rotate(-90deg);
     transform-origin: 50% 0%;
-    transition: 1100ms;
     transition-timing-function: ease-in;
+    transition: 1100ms;
+    animation-delay: 700ms;
     box-shadow: 0 0 5px #74FAF1,
                 0 0 15px #74FAF1,
                 0 0 30px #74FAF1,
@@ -66,10 +67,11 @@ body {
     height: 50vh;
     background-color: rgba(255,255,255,1);
     transition: 1100ms;
-    transition-timing-function: ease-out;
     animation-name: boom;
     animation-iteration-count: infinite;
+    transition-timing-function: ease-out;
     animation-duration: 3100ms;
+    animation-delay: 700ms;
   }
 }
 
